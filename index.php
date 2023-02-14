@@ -12,28 +12,31 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <a href="?page=1">Negócios</a>
-    <a href="?page=2">Comércio</a>
-    <a href="?page=3">Bebércio</a>
+    <a href="/">Home</a>
+    <a href="?page=tabuada">Tabuada</a>
+    <a href="?page=calcimc">Calculadora IMC</a>
+    <a href="?page=calcCustoViagem">Calculadora de Custo de Viagem</a>
+    <a href="?page=sobre">Sobre</a>
+    <!-- <a href="?page=404">404</a> -->
 
     <?php
         if(isset($_GET['page'])){
             $page = $_GET['page'];
             switch($page){
-                case '1';
-                    require_once './page/page1.php';
+                case 'tabuada':
+                    require_once './menu/tabuada.php';
                     break;
-                case '2';
-                    require_once './page/page2.php';
+                case 'calcimc':
+                    require_once './menu/calcimc.php';
                     break;
-                case '3';
-                    require_once './page/page3.php';
-                    break;  
-            echo 'encontrei';
+                case 'calcCustoViagem':
+                    require_once './menu/calcCustoViagem.php';
+                    break;
+                default:
+                echo 'encontrei';
             }
         }
         else{
-            
             echo 'Página não encontrada';
         }
         var_dump($_POST);

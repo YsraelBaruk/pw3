@@ -8,3 +8,9 @@ Este diretório se destina a armazenar os materiais de aula criados durante às 
  ### Tasks do dia
 
 - [x] Navegação entre 3 telas
+- [ ] Menu de navegação
+- [ ] Home
+- [ ] Tabuada
+- [ ] calcular IMC
+- [ ] calcular viagem
+- [ ] sobre
