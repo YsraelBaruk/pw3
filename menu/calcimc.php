@@ -1,15 +1,15 @@
 <p>Página 2</p>
-<form type="post">
-    <input type="number" name="kilos" >
-    <input type="number" name="altura" id="">
-    <input type="button" name="btn">
+<form method="post">
+    <input type="number" name="kilos" placeholder="Kilos">
+    <input type="number" name="altura" placeholder="Altura">
+    <input type="submit" name="btn" value="Calcular">
 </form>
 
 <?php
     if(isset($_POST['btn'])){
-        $kilos;
-        $altura;
-        $resultado = $altura * $kilos;
-        echo "<p>$resultado</p>";
+        $kilos = $_POST['kilos'];
+        $altura = $_POST['altura'];
+        $resultado = ($kilos / ($altura * $altura));
+        echo "<h3>$resultado</h3>";
     }
 ?>

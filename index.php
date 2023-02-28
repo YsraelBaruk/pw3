@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="post">
+    <!-- <form method="post">
         <input type="number"    name="tab">
         <input type="submit" value="Enviar">
-    </form>
+    </form> -->
 
     <a href="/">Home</a>
     <a href="?page=tabuada">Tabuada</a>
@@ -18,7 +18,7 @@
     <a href="?page=calcCustoViagem">Calculadora de Custo de Viagem</a>
     <a href="?page=sobre">Sobre</a>
     <!-- <a href="?page=404">404</a> -->
-
+    <p>Pagina Home</p>
     <?php
         if(isset($_GET['page'])){
             $page = $_GET['page'];
@@ -33,14 +33,11 @@
                     require_once './menu/calcCustoViagem.php';
                     break;
                 default:
-                echo 'encontrei';
             }
         }
         else{
-            echo 'Página não encontrada';
+            require_once './menu/page404.php';
         }
-        var_dump($_POST);
-
         // for($id = 0; $id <= $_POST['tab']; $id++){
         //     echo "<h1> $id * ".$_POST['tab']." = ".$_POST['tab'] * $id."</h1>";
         // }
