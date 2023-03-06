@@ -5,15 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Navegando entre Páginas</title>
 </head>
 <body>
-    <a href="/">Home</a>
-    <a href="?page=tabuada">Tabuada</a>
-    <a href="?page=calcimc">Calculadora IMC</a>
-    <a href="?page=calcCustoViagem">Calculadora de Custo de Viagem</a>
-    <a href="?page=sobre">Sobre</a>
+    <!-- <a href="/">Home</a>
+    <a class="nav-link" href="?page=tabuada">Tabuada</a>
+    <a class="nav-link" href="?page=calcimc">Calculadora IMC</a>
+    <a class="nav-link" href="?page=calcCustoViagem">Calculadora de Custo de Viagem</a>
+    <a class="nav-link" href="?page=sobre">Sobre</a> -->
     <h1>Bem vindo a essa pagina</h1>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(Página atual)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="?page=tabuada">Tabuada</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="?page=calcimc">IMC</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="?page=calcCustoViagem">Custo de Viagem</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="?page=sobre">Sobre</a>
+        </li>
+        </ul>
+    </div>
+</nav>
+
     <?php
         if(isset($_GET['page'])){
             $page = $_GET['page'];
