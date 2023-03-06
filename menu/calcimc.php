@@ -1,9 +1,11 @@
-<h2>Calculadora de IMC</h2>
-<form method="post">
-    <input type="number" name="kilos" placeholder="Kilos">
-    <input type="number" name="altura" placeholder="Altura">
-    <input type="submit" name="btn" value="Calcular">
-</form>
+<div class="container m">
+    <h2>Calculadora de IMC</h2>
+    <form method="post">
+        <input class="form-control form-control-sm" type="number" name="kilos" placeholder="Kilos">
+        <input class="form-control form-control-sm" type="number" name="altura" placeholder="Altura">
+        <input class="btn" type="submit" name="btn" value="Calcular">
+    </form>
+</div>
 
 <?php
     if(isset($_POST['btn'])){
