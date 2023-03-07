@@ -14,5 +14,3 @@ Este diretório se destina a armazenar os materiais de aula criados durante às 
 - [ ] calcular IMC
 - [ ] calcular viagem
 - [ ] sobre
-
-• Os nomes da Branch será no padrão de data internacional (YYYY-MM-dd).
