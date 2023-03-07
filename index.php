@@ -54,11 +54,9 @@
                     break;
                 case 'sobre':
                     require_once './menu/sobre.php';
-                    break;
-                case $page:
-                    require_once './menu/page404.php';
-                    break;
+                    break;                    
                 default:
+                    require_once './menu/page404.php';
             }
         }        
     ?>
